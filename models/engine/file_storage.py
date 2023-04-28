@@ -33,7 +33,7 @@ class FileStorage:
                     new_dict[key] = value
             return new_dict
         return self.__objects
-    
+
     def get(self, cls, id):
         """get an object based on its class and id"""
 
@@ -48,7 +48,6 @@ class FileStorage:
 
         my_dict = self.all(cls)
         return (len(my_dict))
-		
 
     def new(self, obj):
         """sets in __objects the obj with key <obj class name>.id"""
