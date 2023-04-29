@@ -9,7 +9,7 @@ def status():
     """ returns Status of API """
     return jsonify({"status": "OK"})
 
-@app_views.route('stats', strict_slashes=False)
+@app_views.route('/stats', strict_slashes=False)
 def stats():
     """ returns number of each object by type """
     from models.city import City
