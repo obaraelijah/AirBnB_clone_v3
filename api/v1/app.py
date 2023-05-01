@@ -7,7 +7,7 @@ from flask import make_response
 from flask import jsonify
 from models import storage
 from os import getenv
-from flask_cors import CORSCORS
+from flask_cors import CORS
 
 app = Flask(__name__)
 app.register_blueprint(app_views)
